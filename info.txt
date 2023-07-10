@@ -20,3 +20,12 @@ python manage.py startapp app_name
 #Create requirements.txt automatically.
 pip freeze > requirements.txt
 
+#Install all packages using requirements.txt:
+pip install -r requirements.txt
+
+#Start server in local host:
+python manage.py runserver
+
+#Apply the migrations for app:
+python manage.py migrate
+
