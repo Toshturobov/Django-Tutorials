@@ -71,4 +71,3 @@ def xabar(request):
     <h1>XABAR</h1>
 """) 
 
-
