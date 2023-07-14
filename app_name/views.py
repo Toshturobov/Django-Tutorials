@@ -1,19 +1,8 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def home(request):
-    return HttpResponse("""
-    <style>
-        h1{color:blue;}
-        body{display:flex;justify-content:center;background-color:red;gap:20px;}
-    </style>
-
-    <h1><a href="gaming">Gaming</a></h1>
-    <h1><a href="vlogs">Vlogs</a></h1>
-    <h1><a href="movies">Movies</a></h1>
-    <h1><a href="podcast">Podcast</a></h1>
-    <h1><a href="reacts">Reacts</a></h1>
-    <h1><a href="xabar">Xabar</a></h1>
-""") 
+    return render(request, 'index.html')
 
 def gaming(request):
     return HttpResponse("""

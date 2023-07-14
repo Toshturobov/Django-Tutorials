@@ -29,3 +29,9 @@ python manage.py runserver
 #Apply the migrations for app:
 python manage.py migrate
 
+#Open python file using terminal:
+python manage.py migrate
+
+#Create super user:
+python manage.py createsuperuser
+
